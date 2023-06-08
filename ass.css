@@ -1,0 +1,43 @@
+
+body{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    
+     background-color: #d3b5b5;
+
+}
+.title{
+    font-size: 33px;
+    color: yellow;
+}
+div {
+
+    box-sizing: border-box;
+    width: 100%;
+  
+    float: left;
+    align-content: center;
+    align-items: center;
+    
+   }
+   form {
+  
+    margin: 0 auto;
+    font-size: 50px;
+    width: 500px;
+    color:wheat;
+    background-color: rgb(102, 13, 102);
+   }
+   #showJson{ 
+    align-content: center;
+    align-items: center;
+    
+
+    padding-top: 50px;
+    padding-left: 100px;
+    font-size: 33px;
+    color:palevioletred;
+   }

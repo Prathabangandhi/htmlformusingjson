@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Assignment 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</script>
+<link rel="stylesheet" href="ass.css">
+</style>
+
+</head>
+<body>
+    <h1 class="title">Write Json Structure</h1>
+    <form id="formid">
+        <label>Full Name:</label>
+        <input type="text" class="name" id="name"><br>
+        <label>DOB:</label>
+        <input type="date"  class="date" id="date" ><br>
+        <label>Contact No:</label>
+        <input type="number" class="number" id="number" ><br>
+        <label>Address:</label>
+        <input type="text"  class="address" id="address" ><br>
+        <label>Email ID:</label>
+        <input type="email" class="email" id="email" ><br>
+        <input type="button" id="submit" onclick="submitData()" value="Send">
+       
+
+    </form>
+    <div id="showJson"></div>
+    <script>
+        function submitData(){
+            var name=$('#name').val();
+            var dob=$('#date').val();
+            var number=$('#number').val();
+            var address=$('#address').val();
+            var email=$('#email').val();
+
+            jsonObject={
+                "Name":"",
+                "dob":"",
+                "PHNumber":"",
+                "Address":"",
+                "Email":""
+            }
+            jsonObject.Name=name;
+            jsonObject.dob=dob;
+            jsonObject.PHNumber=number;
+            jsonObject.Address=address;
+            jsonObject.Email=email;
+
+            var str=JSON.stringify(jsonObject);
+           // document.write(str);
+document.getElementById('showJson').innerHTML=str;
+        }
+    </script>
+</body>
+</html>
